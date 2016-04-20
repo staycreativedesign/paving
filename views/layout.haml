@@ -1,0 +1,116 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title Joel's Asphalt Paving
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    %script{:src => "/js/bootstrap.min.js"}
+    %script{:src => "/js/boxy.js"}
+    %link{:href => "/css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/css/fonts.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Roboto:500,300,100", :rel => "stylesheet", :type => "text/css"}/
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body
+    .container-fluid
+      #top
+      .row.start
+        %nav#navigation-menu.navbar.navbar-fixed-top.bg-transparent{:role => "navigation margin-left-fix"}
+          %h1#menu-brand.menu-brand.white.pull-left
+            %a{:href => "#top"} Joel's Asphalt Paving
+          %ul#menu-links.list-inline.pull-right.menu-links.white
+            %li
+              %a{:href => "#about"} About
+            %li
+              %a{:href => "#services"} Services
+            %li
+              %a{:href => "#contact"} Contact
+        %a{:href => "#about"}
+          .col-md-12
+            #middle-box.center-block.box-area
+              %h1#middle-text-box Over 25 years of experience
+        .row
+          .col-md-12.text-center
+            %h3
+              %a{:href => "#about"}
+                click for more information
+        .row
+          .col-md-12.text-center
+            %h3 Contact Information
+            %h4
+              %a{:href => "tel:888-779-0246"}
+                888-779-0246
+        .row
+          .col-md-12.text-center
+            %h4
+              %a{:href => "tel:888-779-0246"}
+                405-215-2904
+    .row.about-bg.pull-left
+      #about
+      .margin-left-fix.col-sm-4.col-sm-offset-1.col-md-4.col-md-offset-1.text-center.seperating-link
+        %h2.about-bg-logo
+          Joel's Asphalt Paving
+        %p
+          %img{:src => "/images/bari-blakewood-business-attorney-detroit-michigan.png"}/
+      .col-sm-6.col-sm-offset-1.col-md-5.col-md-offset-1.text-about.sm-center.seperating-link.margin-left-fix
+        %h2.roboto.sm-center History
+        %p
+          this is where the history goes
+    .row.about-bottom-area.text-about
+      %p#services.services-link
+    .row.services{:id => ""}
+      .col-md-5.text-center.margin-left-fix
+        %h1 Services
+        %ul#services-list.roboto.margin-left-fix.cursor.edit-small
+          %li.edit-small{"data-target" => "#service-bef"} Commercial Paving
+          %li{"data-target" => "#service-ba"} Residential Paving
+          %li{"data-target" => "#service-bc"} anything else??
+      .margin-left-fix
+        #service-bef.col-md-6.text-business{"data-role" => "services-row"}
+          %h1.roboto.separator business entity formation
+          %p.sm-center
+            this is where info goes
+        #service-ba.col-md-6.text-business{"data-role" => "services-row", :style => "display:none;"}
+          %h1.roboto.separator business agreements
+          %p.sm-center
+            this is where info goes
+        #service-blap.col-md-6.text-business{"data-role" => "services-row", :style => "display:none;"}
+          %h1.roboto.separator anything else?
+          %p.sm-center
+            this is where info goes
+    .row.sm-center.margin-left-fix
+      .row.contact-bg
+        #contact
+        .col-md-5.seperating-link
+          %h1.text-center
+            Contact
+        .col-md-6.text-contact.white.seperating-link.text-uppercase
+          %h2 Joel's Asphalt Paving
+          %p.center-block
+            foo bar
+          .col-md-7.no-padding
+            %h2 PHONE
+            %p
+              888-779-0246 -
+              405-215-2904
+        .col-md-7.col-md-offset-5
+          %form.separator{:method => "post"}
+            %h2.center-align WE LOOK FORWARD TO HEARING FROM YOU
+            .form-group.col-sm-5.col-md-4.separator
+              %label{:for => "name"} Name
+              %input#name.form-control{:name => "name", :type => "text"}/
+            .form-group.col-sm-5.col-sm-offset-2.col-md-4.col-md-offset-2.separator
+              %label{:for => "email"} Email Address
+              %input#email.form-control{:name => "email", :type => "email"}/
+            .form-group.col-md-10.separator
+              %label{:for => "email"} Message
+              %textarea#message.form-control{:name => "message", :rows => "10", :type => "text"}
+            .col-md-10.no-padding.separator
+              %input.submit.pull-right{:name => "post", :type => "submit", :value => "SEND"}/
+    .row.cc
+      .col-md-12.black.text-center
+        %p Joel's Asphalt Paving
