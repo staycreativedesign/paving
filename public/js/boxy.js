@@ -10,15 +10,6 @@ $(function(){
     });
   });
 
-  $("#services-list li").click(function () {
-    var target = $(this).data('target');
-    var targetClient = $(target);
-    var allClients = $('div[data-role=services-row]');
-    var allClientsWithoutTarget = allClients.not(targetClient);
-    $.when(allClientsWithoutTarget.fadeOut(500)).then(function() {
-        targetClient.fadeIn(500);
-    });
-  });
 
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
