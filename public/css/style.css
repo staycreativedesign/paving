@@ -480,6 +480,7 @@ p {
   background-color: #cf7b72;
   color: white;
   padding-bottom: 15px;
+  min-height: 600px;
 }
 
 .services-link {
@@ -581,7 +582,6 @@ a {
 }
 
 #services {
-  margin-top:50px;
 }
 
 
