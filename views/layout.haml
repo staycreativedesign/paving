@@ -62,12 +62,19 @@
         %h2.roboto.sm-center History
         %p
           this is where the history goes, please have a paragraph about the business ( family owned, experience, name of owner and story... the more the better )
-        %h2.roboto.sm-center Jobs
+        %h2.roboto.sm-center Onsite
         %p.text-center
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/zliB5upkNt8", :width => "100%"}
         #services
         %p.text-center
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/z-tLWGcSRcU", :width => "100%"}
+      .col-md-12
+        %p.text-center
+          %img{:src => "/images/commercial-1.jpg", :class => "image-responsive"}
+          %img{:src => "/images/commercial-2.jpg", :class => "image-responsive"}
+          %img{:src => "/images/residential-1.jpg", :class => "image-responsive"}
+          %img{:src => "/images/residential-2.jpg", :class => "image-responsive"}
+
     .row.about-bottom-area.text-about
       %p.services-link
     .row.services{:id => ""}
@@ -76,20 +83,47 @@
         %ul#services-list.roboto.margin-left-fix.cursor.edit-small
           %li.edit-small{"data-target" => "#service-bef"} Commercial Paving
           %li{"data-target" => "#service-ba"} Residential Paving
-          %li{"data-target" => "#service-bc"} anything else??
       .margin-left-fix
         #service-bef.col-md-6.text-business{"data-role" => "services-row"}
-          %h1.roboto.separator business entity formation
-          %p.sm-center
-            this is where info goes
-        #service-ba.col-md-6.text-business{"data-role" => "services-row", :style => "display:none;"}
-          %h1.roboto.separator business agreements
-          %p.sm-center
-            this is where info goes
-        #service-blap.col-md-6.text-business{"data-role" => "services-row", :style => "display:none;"}
-          %h1.roboto.separator anything else?
-          %p.sm-center
-            this is where info goes
+          %h1.roboto.separator Commercial Paving
+          %p
+            We have over 35 years of experience in the business and have done shopping malls to small store parking lots.
+          %ul
+            %li
+              Retail Parking Areas
+            %li
+              Roadway Paving
+            %li
+              Entrances / Exits
+            %li
+              Parking Lots of all sizes
+            %li
+              Drive Throughs
+            %li
+              Crack Repair/Sealing
+            %li
+              Stiping
+            %li
+              Patching/Milling/Site Management
+            %li
+              Excavation/Gravel Work
+          %h1.roboto.separator
+            Residential Paving
+          %p
+            Our professional services include but are not limited to:
+            %ul
+              %li
+                Driveway Paving
+              %li
+                Roadway Patching
+              %li
+                Remodeling
+              %li
+                Crack Repair/Sealing
+              %li
+                Excavation/Gravel Work
+              %li
+                Our commitment is to provide quality service and make long-term satisfied clients.
     .row.sm-center.margin-left-fix
       .row.contact-bg
         #contact
