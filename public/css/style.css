@@ -1,0 +1,611 @@
+.roboto {
+  font-size: 2.0em;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.navbar {
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.bg-transparent {
+  background: transparent;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.bg-white {
+  background: white;
+  border-bottom: 2px solid #E0E0E0;
+
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          opacity: 0.9
+}
+
+.bg-white h1, .bg-white ul {
+  color: black;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.white-to-black {
+  -webkit-transition: all .10s ease-in-out;
+     -moz-transition: all .10s ease-in-out;
+      -ms-transition: all .10s ease-in-out;
+       -o-transition: all .10s ease-in-out;
+          transition: all .10s ease-in-out;
+}
+
+.menu-brand {
+  margin-left:20px;
+}
+
+.white {
+  color:white;
+}
+
+.separator-bottom {
+  padding-bottom: 50px;
+}
+.menu-right-top {
+  margin-top:40px;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:active {
+  color: inherit;
+}
+
+.form-group {
+  padding:0;
+}
+
+.no-padding {
+  padding:0;
+}
+
+.box-area {
+  border: 7px solid white;
+  width: 60%;
+  margin-top: 15%;
+  color: white;
+  text-align: center;
+  padding:20px;
+}
+
+.box-area h1 {
+  font-family: 'ancona';
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .menu-links li {
+  -webkit-transition: all .10s ease-in-out;
+     -moz-transition: all .10s ease-in-out;
+      -ms-transition: all .10s ease-in-out;
+       -o-transition: all .10s ease-in-out;
+          transition: all .10s ease-in-out;
+}
+
+  .start {
+    min-height:800px;
+    background-image: url('/images/bg-top.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  .about-bottom-area {
+  min-height: 1200px;
+  background-image: url('/images/bg-below-about.jpg');
+  background-position: fixed;
+
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .about-bg-logo{
+    color: white;
+    font-size: 2em;
+  }
+
+  .contact-bg {
+  min-height: 800px;
+  background-image: url('/images/bg-contact.jpg');
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  .sm-center {
+    text-align: justify;
+  }
+
+  .client-list {
+    font-size:2.6em;
+  }
+
+  .box-area {
+    border: 7px solid white;
+    width: 60%;
+    margin-top: 20%;
+    color: white;
+    text-align: center;
+    padding:70px;
+  }
+
+}
+
+
+
+@media (min-width: 1200px) {
+  .start {
+    min-height:1200px;
+    background-image: url('/images/bg-top.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .sm-center {
+    text-align: justify;
+  }
+
+  .box-area {
+    border: 7px solid white;
+    width: 50%;
+    margin-top: 15%;
+    color: white;
+    text-align: center;
+    padding:60px;
+  }
+
+  .contact-bg {
+  min-height: 1200px;
+  background-image: url('/images/bg-contact.jpg');
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+  .about-bottom-area {
+  max-height: 1200px;
+  background-image: url('/images/bg-below-about.jpg');
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .logo-text {
+    display: none;
+  }
+
+}
+
+
+
+@media (max-width: 990px) {
+  .start {
+    min-height: 800px;
+    background-image: url('/images/bg-top.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+   .bg-white ul, .bg-white {
+
+  }
+
+  .menu-brand {
+    font-size: 3em;
+  }
+
+  .menu-links {
+    font-family: 'sans-light';
+    text-transform:uppercase;
+    font-size: 2.5em;
+    margin-top:35px;
+    margin-right: 15px;
+  }
+
+  .form-group {
+    padding:15px;
+  }
+
+  .client-list {
+    font-size:2.6em;
+  }
+
+  .bout-bg-logo{
+    color: white;
+    font-size: 3em;
+
+  }
+  .sm-center {
+    text-align: justify;
+  }
+
+  .no-padding {
+    padding:0;
+  }
+
+  .about-bottom-area {
+    min-height: 1200px;
+    background-image: url('/images/bg-below-about.jpg');
+    background-position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .contact-bg {
+  min-height: 800px;
+  background-image: url('/images/bg-contact.jpg');
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+  .box-area {
+    border: 7px solid white;
+    width: 75%;
+    margin-top: 25%;
+    color: white;
+    text-align: center;
+    padding:30px;
+  }
+}
+
+@media only screen and (min-width:400px) and (max-width: 750px)  {
+ .box-area {
+    border: 7px solid white;
+    color: white;
+    font-size: .9em;
+    width: 80%;
+    padding:10px;
+    margin-top:230px;
+  }
+
+  .box-area h1 {
+    font-size:4em;
+  }
+}
+
+@media (min-width: 950px) {
+  .menu-links {
+  font-family: 'sans-light';
+  text-transform:uppercase;
+  font-size: 3em;
+  margin-top:35px;
+  margin-right: 25px;
+  }
+}
+
+@media only screen and (min-width:1px) and (max-width: 375px)  {
+  .menu-brand {
+    font-size: 3em;
+  }
+
+  #menu-links {
+    font-size: 2em;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .box-area {
+    font-size: 3.5em;
+    width: 100%;
+    padding:10px;
+    margin-top:130px;
+  }
+
+  .box-area h1 {
+    font-size: .9em;
+  }
+
+  .servicesrow {
+    display: none;
+  }
+
+  #client-list li {
+    font-size: .7em;
+  }
+
+  .text-about p{
+    text-align: justify;
+  }
+
+  .center-align {
+  text-align: center;
+}
+}
+
+@media (max-width: 799px) {
+  .menu-brand {
+    width: 100%;
+    text-align: center;
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    color:black;
+    background-color: white;
+    opacity: 0.9
+  }
+
+  .menu-brand h1 {
+    font-size: 3em;
+  }
+
+  .bg-white ul {
+    color: black;
+  }
+
+  .menu-links {
+    width: 100%;
+    text-align: center;
+    margin:0;
+    background-color: white;
+    color: black;
+  }
+
+  .menu-links li {
+    padding:;
+  }
+
+  .edit-small li{
+    font-size: 0.8em;
+  }
+
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.separator {
+  margin-top:60px;
+}
+
+.about-bg {
+}
+
+.text-services {
+  padding-bottom: 40px;
+}
+
+
+
+.about-bg-logo, .client-list {
+  text-transform: uppercase;
+  color: white
+}
+
+.red {
+  color: #bd1c46;
+}
+
+.text-about p, .text-business p, {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  padding-bottom:20px;
+
+}
+
+.text-about p, .text-clients p, .cc p{
+  color: white;
+}
+
+.text-business p, .text-contact p {
+  color: white;
+}
+
+.text-about p, .text-clients p, .text-business p, .text-contact p {
+  font-size: 1.5em;
+
+}
+.roboto, .text-clients h2{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+
+
+.text-clients h2 {
+  font-size: 2em;
+}
+
+.services {
+  background-color: #cf7b72;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.services-link {
+  position: relative;
+  top:600px;
+}
+  h1, h3 {
+    font-family: 'sans-light';
+    text-transform: uppercase;
+    color: white;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+.contact-bg h1, p {
+  color: white;
+}
+
+.contact-bg h2, label {
+  color: #ce7268;
+}
+
+
+
+.form-control {
+  background: transparent;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input[type="submit"] {
+  padding:10px;
+  border:0;
+  color: white;
+  font-size: 1.5em;
+}
+
+input[type="submit"]  {
+  background: #ce7268;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  color:white;
+}
+
+.row {
+  margin-right:0;
+}
+
+.container-fluid {
+  padding-right: 0;
+}
+
+.text-social {
+  padding:25px;
+}
+
+.text-social {
+  background: #ce7268;
+}
+.text-social img {
+  padding:10px;
+}
+.cc p {
+  padding-top:10px;
+}
+
+#middle-box {
+}
+
+a:hover, a, a:active, a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fixed-menu {
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.9;
+  border-bottom:1px solid #D8D8D8;
+}
+
+.seperating-link {
+  margin-top:130px;
+}
+
+#services {
+  margin-top:50px;
+}
+
+
+
+.menu-button {
+  position: fixed;
+}
+.area {
+  position: fixed;
+}
+
+.margin-left-fix {
+  margin-left:15px;
+}
+
+#about h2 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+.cc{
+  background-color: black;
+}
+
