@@ -24,9 +24,6 @@ $(function(){
       });
   });
 
-   $(document).scroll(function(){
-     $("#navigation-menu").toggleClass('bg-white', $(this).scrollTop() > 250);
- });
 
 });
 

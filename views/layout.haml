@@ -19,7 +19,7 @@
     .container-fluid
       #top
       .row.start
-        %nav#navigation-menu.navbar.navbar-fixed-top.bg-transparent{:role => "navigation margin-left-fix"}
+        %nav#navigation-menu.navbar.navbar-fixed-top{:role => "navigation margin-left-fix"}
           %h1#menu-brand.menu-brand.white.pull-left
             %a{:href => "#top"} Joles Asphalt Paving
           %ul#menu-links.list-inline.pull-right.menu-links.white
@@ -78,21 +78,17 @@
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/z-tLWGcSRcU", :width => "100%"}
       .col-md-12
         %p.text-center
-          %img{:src => "/images/commercial-1.jpg", :class => "image-responsive"}
-          %img{:src => "/images/commercial-2.jpg", :class => "image-responsive"}
-          %img{:src => "/images/residential-1.jpg", :class => "image-responsive"}
-          %img{:src => "/images/residential-2.jpg", :class => "image-responsive"}
 
     .row.about-bottom-area.text-about
       %p.services-link
     .row.services{:id => ""}
-      .col-md-5.text-center.margin-left-fix
+      .col-md-4.text-center.margin-left-fix
         %h1 Services
         %ul#services-list.roboto.margin-left-fix.cursor.edit-small
           %li.edit-small{"data-target" => "#service-bef"} Commercial Paving
           %li{"data-target" => "#service-ba"} Residential Paving
       .margin-left-fix
-        #service-bef.col-md-6.text-business{"data-role" => "services-row"}
+        #service-bef.col-md-7.text-business{"data-role" => "services-row"}
           %h1.roboto.separator Commercial Paving
           %p
             We have over 35 years of experience in the business and have done shopping malls to small store parking lots.
@@ -115,6 +111,9 @@
               Patching/Milling/Site Management
             %li
               Excavation/Gravel Work
+          %p
+            %img{:src => "/images/commercial-1.jpg", :class => "image-responsive"}
+            %img{:src => "/images/commercial-2.jpg", :class => "image-responsive"}
           %h1.roboto.separator
             Residential Paving
           %p
@@ -132,6 +131,9 @@
                 Excavation/Gravel Work
               %li
                 Our commitment is to provide quality service and make long-term satisfied clients.
+            %p
+              %img{:src => "/images/residential-1.jpg", :class => "image-responsive"}
+              %img{:src => "/images/residential-2.jpg", :class => "image-responsive"}
     .row.sm-center.margin-left-fix
       .row.contact-bg
         #contact
