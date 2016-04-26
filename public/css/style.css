@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: #e58a2c;
+  background-color: black;
 }
 
 .bg-transparent {
@@ -31,7 +31,7 @@
           opacity: 0.9
 }
 
-.bg-white h1, .bg-white ul {
+.bg-white, .bg-white ul {
   color: white;
   -webkit-transition: all .5s ease-in-out;
      -moz-transition: all .2s ease-in-out;
@@ -46,6 +46,10 @@
       -ms-transition: all .10s ease-in-out;
        -o-transition: all .10s ease-in-out;
           transition: all .10s ease-in-out;
+}
+
+.orange {
+  color:#e58a2c;
 }
 
 .menu-brand {
@@ -243,7 +247,6 @@ img {
 
   .menu-links {
     margin-top: 15px;
-    font-family: 'sans-light';
     text-transform:uppercase;
     font-size: 2.5em;
     margin-right: 15px;
@@ -318,7 +321,6 @@ img {
 @media (min-width: 950px) {
   .menu-links {
   margin-top: 15px;
-  font-family: 'sans-light';
   text-transform:uppercase;
   font-size: 3em;
   margin-right: 25px;
@@ -482,10 +484,9 @@ p {
   top:600px;
 }
   h1, h3 {
-    font-family: 'sans-light';
-    text-transform: uppercase;
-    color: white;
+    color: #e58a2c;
 }
+
 
 h1 {
   font-size: 3em;
@@ -610,4 +611,8 @@ h4 {
 
 .color-orange {
   color: #ff9c29;
+}
+
+.orange {
+  font-size: 2em;
 }
