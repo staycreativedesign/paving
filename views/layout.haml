@@ -20,9 +20,9 @@
       #top
       .row.start
         %nav#navigation-menu.navbar.navbar-fixed-top{:role => "navigation margin-left-fix"}
-          %h1#menu-brand.menu-brand.white.pull-left
+          %h1#menu-brand.menu-brand.pull-left
             %a{:href => "#top"} Joles Asphalt Paving
-          %ul#menu-links.list-inline.pull-right.menu-links.white
+          %ul#menu-links.list-inline.pull-right.menu-links.orange
             %li
               %a{:href => "#about"} About
             %li
@@ -32,44 +32,40 @@
         %a{:href => "#about"}
           .col-md-12
             #middle-box.center-block.box-area
-              %h1#middle-text-box Over 30 years of experience
-              %h2 Servicing all of Oklahoma and all surrounding area
+              %h1#middle-text-box.white Over 35 years of experience
+              %h2 Servicing state-wide
         .row
           .col-md-12.text-center
-            %h3
+            %h4
               %a{:href => "#about"}
                 click for more information
         .row
           .col-md-12.text-center
-            %h3 Contact Information
-            %h4
+            %h1.white
               %a{:href => "tel:888-779-0246"}
                 888-779-0246
-        .row
-          .col-md-12.text-center
-            %h4
-              %a{:href => "tel:888-779-0246"}
-                405-215-2904
     .row.about-bg.pull-left
       #about
       .margin-left-fix.col-sm-5.col-sm-offset-1.col-md-5.col-md-offset-1.text-center.seperating-link
         %h2.about-bg-logo
           Joles Asphalt Paving
+        %h2.about-bg-logo
+          Locally owned
+        %h2.about-bg-logo
+          Free Estimates
+        %h2.about-bg-logo
+          All work guaranteed
         %p
           %img{:src => "/images/bari-blakewood-business-attorney-detroit-michigan.png"}/
-        %h3
-          We have the machinery for any job, big or small!
-        %h3
-          Free Estimates
-        %h3
-          All work guaranteed
         %p
           %img{:src => "/images/bbb.png"}
 
       .col-sm-6.col-sm-offset-1.col-md-6.col-md-offset-1.text-about.sm-center.seperating-link.margin-left-fix
         %h2.roboto.sm-center History
         %p
-          Joles Asphalt Paving has been servicing Tulsa and the surrounding areas very proudly for many years. Our workmanship is the highest quality and we will complete the job quickly, with little disruption to your routine. Let us give you a fast, free estimate on your residential, industrial or commercial property. Please allow our extensive knowledge of asphalt paving and our experienced staff to assist you today! Thank you for your business! We have over 35 years of experience
+          Joles Asphalt Paving has been providing high quality paving needs to businesses and homes for over 35 years. We provide services to parking lots and driveways. their is no job to BIG or to small we fix them all! Joles asphalt is family owned and operated. All work is guaranteed. We strive to get the job done right the first time and in a cost effective manner.
+        %p
+          Take advantage of out FREE estimates for all your driveway and parking lot needs!
         %h2.roboto.sm-center Onsite
         %p.text-center
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/zliB5upkNt8", :width => "100%"}
@@ -81,17 +77,14 @@
 
     .row.about-bottom-area.text-about
       %p.services-link
-    .row.services{:id => ""}
-      .col-md-4.text-center.margin-left-fix
-        %h1 Services
-        %ul#services-list.roboto.margin-left-fix.cursor.edit-small
-          %li.edit-small{"data-target" => "#service-bef"} Commercial Paving
-          %li{"data-target" => "#service-ba"} Residential Paving
+    .row.services
+      .col-md-12.text-center
+        %h2 Our services
+        %hr
       .margin-left-fix
-        #service-bef.col-md-7.text-business{"data-role" => "services-row"}
-          %h1.roboto.separator Commercial Paving
-          %p
-            We have over 35 years of experience in the business and have done shopping malls to small store parking lots.
+        #service-bef.col-md-6.text-center.separator
+          %img{:src => "/images/commercial-1.jpg", :class => "image-responsive"}
+          %h1.roboto Commercial Paving
           %ul
             %li
               Retail Parking Areas
@@ -106,15 +99,14 @@
             %li
               Crack Repair/Sealing
             %li
-              Stiping
+              Striping
             %li
               Patching/Milling/Site Management
             %li
               Excavation/Gravel Work
-          %p
-            %img{:src => "/images/commercial-1.jpg", :class => "image-responsive"}
-            %img{:src => "/images/commercial-2.jpg", :class => "image-responsive"}
-          %h1.roboto.separator
+        #service-bef.col-md-6.text-center.separator
+          %img{:src => "/images/residential-2.jpg", :class => "image-responsive"}
+          %h1.roboto
             Residential Paving
           %p
             Our professional services include but are not limited to:
@@ -131,9 +123,6 @@
                 Excavation/Gravel Work
               %li
                 Our commitment is to provide quality service and make long-term satisfied clients.
-            %p
-              %img{:src => "/images/residential-1.jpg", :class => "image-responsive"}
-              %img{:src => "/images/residential-2.jpg", :class => "image-responsive"}
     .row.sm-center.margin-left-fix
       .row.contact-bg
         #contact
@@ -165,4 +154,4 @@
               %input.submit.pull-right{:name => "post", :type => "submit", :value => "SEND"}/
     .row.cc
       .col-md-12.black.text-center
-        %p Jole's Asphalt Paving 888-779-0246 - 405-215-2904
+        %p Joles Asphalt Paving 888-779-0246 - 405-215-2904
