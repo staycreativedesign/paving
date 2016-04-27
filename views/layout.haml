@@ -1,157 +1,370 @@
 !!!
-%html{:lang => "en"}
+%html
   %head
-    %title Joles Asphalt Paving  - 888-779-0246 - 405-215-2904
     %meta{:charset => "utf-8"}/
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
-    %script{:src => "/js/bootstrap.min.js"}
-    %script{:src => "/js/boxy.js"}
-    %link{:href => "/css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/css/style.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/css/fonts.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "http://fonts.googleapis.com/css?family=Roboto:500,300,100", :rel => "stylesheet", :type => "text/css"}/
-    /[if lt IE 9]
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    %title Joles Asphalt Paving
+    %meta{:content => "Joles Asphalt Paving", :name => "description"}/
+    %meta{:content => "stay creative design", :name => "author"}/
+    %meta{:content => "asphalt paving tulsa, oklahoma asphalt paving", :name => "keywords"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Stylesheets
+    %link{:href => "bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}/
+    / bootstrap grid
+    %link{:href => "bootstrap/css/bootstrap-theme.min.css", :rel => "stylesheet"}/
+    / bootstrap theme
+    %link{:href => "css/style.css", :rel => "stylesheet"}/
+    / template styles
+    %link{:href => "css/color-default.css", :rel => "stylesheet"}/
+    / default template color styles
+    %link{:href => "css/retina.css", :rel => "stylesheet"}/
+    / retina ready styles
+    %link{:href => "css/responsive.css", :rel => "stylesheet"}/
+    / responsive styles
+    %link{:href => "css/animate.css", :rel => "stylesheet"}/
+    / animation for content
+    %link{:href => "owl-carousel/owl.carousel.css", :rel => "stylesheet"}/
+    / .carousels
+    %link{:href => "owl-carousel/owl.theme.css", :rel => "stylesheet"}/
+    / .carousels
+    / Font icons
+    %link{:href => "fonts/font-awesome-4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    / Fontawesome icons css
+    / Revolution slider
+    %link{:href => "rs-plugin/css/settings.css", :rel => "stylesheet"}/
+    / .rs-settings end
+    %link{:href => "rs-plugin/css/builder.css", :rel => "stylesheet"}/
+    / settings for rev slider
+    / Magnific Popup - video lightbox
+    %link{:href => "css/magnific-popup.css", :rel => "stylesheet"}/
+    / Google Web fonts
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300italic,400,800,700,600", :rel => "stylesheet", :type => "text/css"}/
   %body
-    .container-fluid
-      #top
-      .row.start
-        %nav#navigation-menu.navbar.navbar-fixed-top{:role => "navigation margin-left-fix"}
-          %h1#menu-brand.menu-brand.pull-left
-            %a{:href => "#top"} Joles Asphalt Paving
-          %ul#menu-links.list-inline.pull-right.menu-links.orange
-            %li
-              %a{:href => "#about"} About
-            %li
-              %a{:href => "#services"} Services
-            %li
-              %a{:href => "#contact"} Contact
-        %a{:href => "#about"}
-          .col-md-12
-            #middle-box.center-block.box-area
-              %h1#middle-text-box.white Over 35 years of experience
-              %h2 Servicing state-wide
+    .header-wrapper.header-transparent
+      / .header start
+      %header#header
+        .header-inner
+          / .container start
+          .container
+            / .main-nav start
+            .main-nav
+              / .row start
+              .row.bg-grey
+                .col-md-6
+                  %nav.navbar.navbar-default.nav-left{:role => "navigation"}
+                    / .navbar-header start
+                    .navbar-header
+                      .logo.pull-left
+                        %a{:href => "index.html"}
+                          %h1.orange.logo-margin-fix
+                            Joles Asphalt Paving
+                      / .logo end
+
+                  %p.contact-info
+                    %strong Phone:
+                    %span.orange 888-779-0246
+                    %strong
+                      Free Estimates
+                .col-md-6
+                  %ul.nav.navbar-nav.pull-right
+                    %li.orange
+                      %a{:href => "about.html", :class => "orange"} About us
+                    %li
+                      %a{:href => "services.html"} Services
+                    %li
+                      %a{:href => "contact.html"} Contact
+                      / .nav.navbar-nav end
+                      / #search start
+                      / #search end
+                    / MAIN NAVIGATION END
+                  / .navbar.navbar-default end
+                / .col-md-12 end
+              / .row end
+            / .main-nav end
+          / .container end
+        / .header-inner end
+      / .header
+    / .header-wrapper.header-transparent end
+    .tp-banner-container.fullwidthbanner
+      #rev-slider.tp-banner
+        %ul
+          / SLIDE ONE
+          %li{"data-masterspeed" => "700", "data-slotamount" => "5", "data-title" => "winter", "data-transition" => "fade"}
+            / MAIN IMAGE
+            %img{:alt => "slidebg3", "data-bgfit" => "cover", "data-bgposition" => "center center", "data-bgrepeat" => "no-repeat", :src => "img/slider/slide-01.jpg"}/
+            .tp-caption.tp-big-heading.tp-big-heading-bold.tp-white.sfb.text-center{"data-easing" => "Back.easeOut", "data-endspeed" => "500", "data-speed" => "500", "data-start" => "1000", "data-x" => "110", "data-y" => "310", :style => "z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"}
+              Over
+              %span 35
+              years of experience
+            .tp-caption.tp-small-heading.sfb{"data-easing" => "Back.easeOut", "data-endspeed" => "500", "data-speed" => "500", "data-start" => "1100", "data-x" => "360", "data-y" => "370", :style => "z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"}
+              Serving state wide very proudly for over 35 years
+          / SLIDE ONE END
+      / .tp-banner end
+    / .tp-banner-container end
+    / .page-content start
+    .page-content
+      .container
+        / .row start
+        .row.mb-0.negative-top-margin
+          .col-md-4.col-sm-4
+            .feature-box.style-1
+              .feature-body{:style => "overflow: hidden;"}
+                .custom-heading.pull-left{:style => "width: 20%;"}
+                  %img.img-responsive{:src => "/img/truck.png"}
+                .custom-heading.pull-right.text-left{:style => "width: 75%"}
+                  %h4 Free Estimates
+                  %p We offer affordable estimates to match your budget!
+          .col-md-4.col-sm-4
+            .feature-box.style-1
+              .feature-body{:style => "overflow: hidden;"}
+                .custom-heading.pull-left{:style => "width: 20%;"}
+                  %img.img-responsive{:src => "/img/truck.png"}
+                .custom-heading.pull-right.text-left{:style => "width: 75%"}
+                  %h4 Locally Owned
+                  %p We are proud to be locally owned and operated for 35 years.
+
+          .col-md-4.col-sm-4
+            .feature-box.style-1
+              .feature-body{:style => "overflow: hidden;"}
+                .custom-heading.pull-left{:style => "width: 20%;"}
+                  %img.img-responsive{:src => "/img/truck.png"}
+                .custom-heading.pull-right.text-left{:style => "width: 75%"}
+                  %h4 Experience
+                  %p We have over 35 years of experience getting the job done!
+                / .custom-heading end
+              / .feature-body end
+            / .feature-box-end
+          / .col-md-4 end
+    .page-content.quote.style-1.custom-background.bkg-darkgrey.dark.mb-70
+    .page-content
+      .container
         .row
-          .col-md-12.text-center
-            %h4
-              %a{:href => "#about"}
-                click for more information
-        .row
-          .col-md-12.text-center
-            %h1.white
-              %a{:href => "tel:888-779-0246"}
+          .col-md-4.col-sm-4
+            .feature-box.style-2
+              .feature-media
+                %img.img-responsive{:alt => "Builder Construction HTML Template", :src => "img/pics/img-01.jpg"}/
+              / .feature-media end
+              .feature-body
+                .custom-heading.style-1
+                  %h4 About us
+                / .custom-heading end
+                %p
+                  We are builder construction company from Uk with over 20 years
+                  of experience in house remodeling, green building and renovations.
+              / .feature-body end
+            / .feature-box-end
+          / .col-md-4 end
+          .col-md-4.col-sm-4
+            .feature-box.style-2
+              .feature-media
+                %img.img-responsive{:alt => "Builder Construction HTML Template", :src => "img/pics/img-02.jpg"}/
+              .feature-body
+                .custom-heading.style-1
+                  %h4 Our services
+                / .custom-heading end
+                %p
+                  Professional construction services from house renovations and remodeling,
+                  green building and small scope work, like painting.
+              / .feature-body end
+            / .feature-box-end
+          / .col-md-4 end
+          .col-md-4.col-sm-4
+            .feature-box.style-2
+              .feature-media
+                %img.img-responsive{:alt => "Builder Construction HTML Template", :src => "img/pics/img-03.jpg"}/
+              .feature-body
+                .custom-heading.style-1
+                  %h4 Project management
+                / .custom-heading end
+                %p
+                  Our highly educated staff will make sure that your project will be finished
+                  on time and specified budget.
+              / .feature-body end
+            / .feature-box-end
+          / .col-md-4 end
+        / .row end
+      / .container end
+    / .page-content end
+    / .page-content start
+    .page-content.custom-background.bkg-black.dark.mb-70
+      .container-fluid
+        / .row start
+        .row.mb-0
+          / .col-md-12 start
+          .col-md-12.padding-0.mb-0
+            / Gallery carousel start
+            .carousel-wrapper
+              .carousel-container
+                #gallery-carousel.owl-carousel.owl-theme
+                  .item
+                    .gallery-carousel-item
+                      %figure
+                        %img.img-responsive{:alt => "Builder Construction HTML Template", :src => "img/pics/img-04.jpg"}/
+                        .hover-mask-container
+                          .hover-zoom
+                            Family House Remodeling Project
+    #footer-wrapper
+      / #footer start
+      %footer#footer
+        / .container start
+        .container
+          / .row start
+          .row
+            / .col-md-3 start
+            .col-md-6.col-sm-12
+              %h1.orange
+                Joles Asphalt Paving
+            / .col-md-3 end
+            / .col-md-3 start
+            .col-md-3.col-sm-4
+            .col-md-3.col-sm-4
+              .footer-info
+                %strong Phone:
                 888-779-0246
-    .row.about-bg.pull-left
-      #about
-      .margin-left-fix.col-sm-5.col-sm-offset-1.col-md-5.col-md-offset-1.text-center.seperating-link
-        %h2.about-bg-logo
-          Joles Asphalt Paving
-        %h2.about-bg-logo
-          Locally owned
-        %h2.about-bg-logo
-          Free Estimates
-        %h2.about-bg-logo
-          All work guaranteed
-        %p
-          %img{:src => "/images/bari-blakewood-business-attorney-detroit-michigan.png"}/
-        %p
-          %img{:src => "/images/bbb.png"}
-
-      .col-sm-6.col-sm-offset-1.col-md-6.col-md-offset-1.text-about.sm-center.seperating-link.margin-left-fix
-        %h2.roboto.sm-center History
-        %p
-          Joles Asphalt Paving has been providing high quality paving needs to businesses and homes for over 35 years. We provide services to parking lots and driveways. their is no job to BIG or to small we fix them all! Joles asphalt is family owned and operated. All work is guaranteed. We strive to get the job done right the first time and in a cost effective manner.
-        %p
-          Take advantage of out FREE estimates for all your driveway and parking lot needs!
-        %h2.roboto.sm-center Onsite
-        %p.text-center
-          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/zliB5upkNt8", :width => "100%"}
-        #services
-        %p.text-center
-          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/z-tLWGcSRcU", :width => "100%"}
-      .col-md-12
-        %p.text-center
-
-    .row.about-bottom-area.text-about
-      %p.services-link
-    .row.services
-      .col-md-12.text-center
-        %h2 Our services
-        %hr
-      .margin-left-fix
-        #service-bef.col-md-6.text-center.separator
-          %img{:src => "/images/commercial-1.jpg", :class => "image-responsive"}
-          %h1.roboto Commercial Paving
-          %ul
-            %li
-              Retail Parking Areas
-            %li
-              Roadway Paving
-            %li
-              Entrances / Exits
-            %li
-              Parking Lots of all sizes
-            %li
-              Drive Throughs
-            %li
-              Crack Repair/Sealing
-            %li
-              Striping
-            %li
-              Patching/Milling/Site Management
-            %li
-              Excavation/Gravel Work
-        #service-bef.col-md-6.text-center.separator
-          %img{:src => "/images/residential-2.jpg", :class => "image-responsive"}
-          %h1.roboto
-            Residential Paving
-          %p
-            Our professional services include but are not limited to:
-            %ul
-              %li
-                Driveway Paving
-              %li
-                Roadway Patching
-              %li
-                Remodeling
-              %li
-                Crack Repair/Sealing
-              %li
-                Excavation/Gravel Work
-              %li
-                Our commitment is to provide quality service and make long-term satisfied clients.
-    .row.sm-center.margin-left-fix
-      .row.contact-bg
-        #contact
-        .col-md-5.seperating-link
-          %h1.text-center
-            Contact
-        .col-md-6.text-contact.white.seperating-link.text-uppercase
-          %h2 Joles Asphalt Paving
-          %p.center-block
-            Thank you for your interest in Jole's Asphalt Paving
-          .col-md-7.no-padding
-            %h2 PHONE
+            / .col-md-3 end
+          / .row end
+        / .container end
+      / #footer end
+    / #footer-wrapper end
+    / #copyright-container start
+    #copyright-container
+      / .container start
+      .container
+        / .row start
+        .row
+          / .col-md-6 start
+          .col-md-6.col-sm-6
             %p
-              888-779-0246 -
-              405-215-2904
-        .col-md-7.col-md-offset-5
-          %form.separator{:method => "post"}
-            %h2.center-align WE LOOK FORWARD TO HEARING FROM YOU
-            .form-group.col-sm-5.col-md-4.separator
-              %label{:for => "name"} Name
-              %input#name.form-control{:name => "name", :type => "text"}/
-            .form-group.col-sm-5.col-sm-offset-2.col-md-4.col-md-offset-2.separator
-              %label{:for => "email"} Email Address
-              %input#email.form-control{:name => "email", :type => "email"}/
-            .form-group.col-md-10.separator
-              %label{:for => "email"} Message
-              %textarea#message.form-control{:name => "message", :rows => "10", :type => "text"}
-            .col-md-10.no-padding.separator
-              %input.submit.pull-right{:name => "post", :type => "submit", :value => "SEND"}/
-    .row.cc
-      .col-md-12.black.text-center
-        %p Joles Asphalt Paving 888-779-0246 - 405-215-2904
+              %strong © Builder
+              2016. All rights reserved
+          / .col-md-6 end
+          / .col-md-6 start
+          .col-md-6.col-sm-6
+            %ul.breadcrumb
+              %li
+                %a{:href => "index.html"} Home
+              %li
+                %a{:href => "about.html"} About
+              %li
+                %a{:href => "services.html"} Services
+              %li
+                %a{:href => "projects.html"} Projects
+              %li
+                %a{:href => "news.html"} News
+              %li
+                %a{:href => "contact.html"} Contact
+          / .col-md-6 end
+        / .row end
+      / .container end
+      %a.scroll-up{:href => "#"}
+        %span.icon-container
+          %img.img-responsive{:alt => "arrow icon", :src => "img/svg/arrowup.svg"}/
+    / .copyright-container end
+    %script{:src => "js/jquery-2.1.4.min.js"}
+    / jQuery library
+    %script{:src => "bootstrap/js/bootstrap.min.js"}
+    / .bootstrap script
+    %script{:src => "js/jquery.scripts.min.js"}
+    / modernizr, retina...
+    %script{:src => "rs-plugin/js/jquery.themepunch.tools.min.js"}
+    / Revolution slider script
+    %script{:src => "rs-plugin/js/jquery.themepunch.revolution.min.js"}
+    / Revolution slider script
+    %script{:src => "js/jquery.magnific-popup.min.js"}
+    / used for video lightbox
+    %script{:src => "owl-carousel/owl.carousel.min.js"}
+    / Carousels script
+    %script{:src => "js/retina.js"}
+    / retina script
+    %script{:src => "js/include.js"}
+    / custom js functions
+    :javascript
+      /* <![CDATA[ */
+      jQuery(document).ready(function ($) {
+          'use strict';
+
+          jQuery('#rev-slider').revolution(
+                  {
+                      dottedOverlay: "none",
+                      delay: 9000,
+                      startwidth: 1170,
+                      startheight: 700,
+                      hideThumbs: 200,
+                      thumbWidth: 100,
+                      thumbHeight: 50,
+                      thumbAmount: 3,
+                      navigationType: "none",
+                      navigationArrows: "solo",
+                      navigationStyle: "preview5",
+                      touchenabled: "on",
+                      onHoverStop: "off",
+                      swipe_velocity: 0.7,
+                      swipe_min_touches: 1,
+                      swipe_max_touches: 1,
+                      drag_block_vertical: false,
+                      keyboardNavigation: "on",
+                      navigationHAlign: "center",
+                      navigationVAlign: "bottom",
+                      navigationHOffset: 0,
+                      navigationVOffset: 20,
+                      soloArrowLeftHalign: "left",
+                      soloArrowLeftValign: "center",
+                      soloArrowLeftHOffset: 20,
+                      soloArrowLeftVOffset: 0,
+                      soloArrowRightHalign: "right",
+                      soloArrowRightValign: "center",
+                      soloArrowRightHOffset: 20,
+                      soloArrowRightVOffset: 0,
+                      shadow: 0,
+                      fullWidth: "on",
+                      fullScreen: "off",
+                      spinner: "spinner0",
+                      stopLoop: "off",
+                      stopAfterLoops: -1,
+                      stopAtSlide: -1,
+                      shuffle: "off",
+                      forceFullWidth: "off",
+                      fullScreenAlignForce: "off",
+                      minFullScreenHeight: "400",
+                      hideThumbsOnMobile: "off",
+                      hideNavDelayOnMobile: 1500,
+                      hideBulletsOnMobile: "off",
+                      hideArrowsOnMobile: "off",
+                      hideThumbsUnderResolution: 0,
+                      hideSliderAtLimit: 0,
+                      hideCaptionAtLimit: 0,
+                      hideAllCaptionAtLilmit: 0,
+                      startWithSlide: 0,
+                      hideTimerBar: "on"
+                  });
+
+          $('.video-post').magnificPopup({
+              type: 'iframe',
+              iframe: {
+                  markup: '<div class="mfp-iframe-scaler">' +
+                          '<div class="mfp-close"></div>' +
+                          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                          '</div>'
+              }
+          });
+
+          // GALLERY CAROUSEL
+          $('#gallery-carousel').owlCarousel({
+              items: 5, //5 items above 1000px browser width
+              itemsCustom: [[0, 1], [600, 2], [1000, 4], [1300, 5]],
+              autoPlay: true,
+              pagination: false,
+              navigation: true
+          });
+
+          // TESTIMONIAL CAROUSEL START
+          $('#testimonial-carousel').owlCarousel({
+              items: 2, //2 items above 1000px browser width
+              itemsCustom: [[0, 1], [600, 2], [1000, 2]],
+              autoPlay: true,
+              pagination: false,
+              navigation: true
+          });
+
+      });
+      /* ]]> */
