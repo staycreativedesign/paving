@@ -40,6 +40,7 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300italic,400,800,700,600", :rel => "stylesheet", :type => "text/css"}/
   %body
+    %a{:name => "#home"}
     .header-wrapper.header-transparent
       / .header start
       %header#header
@@ -51,40 +52,30 @@
               / .row start
               .row.bg-grey
                 .col-md-6
-                  %nav.navbar.navbar-default.nav-left{:role => "navigation"}
+                  %nav.navbar.navbar-default.no-pb.nav-left{:role => "navigation"}
                     / .navbar-header start
-                    .navbar-header
-                      .logo.pull-left
-                        %a{:href => "index.html"}
-                          %h1.orange.logo-margin-fix
-                            Joles Asphalt Paving
+                    .navbar-header.no-pb
+                      .logo.logo-area.no-pb
+                        %h1.orange.logo-margin-fix
+                          Joles Asphalt Paving
                       / .logo end
 
                   %p.contact-info
                     %strong Phone:
-                    %span.orange 888-779-0246
+                    %span.orange
+                      %a{:href => "tel:888-779-0246" } 888-779-0246
                     %strong
                       Free Estimates
                 .col-md-6
-                  %ul.nav.navbar-nav.pull-right
-                    %li.orange
-                      %a{:href => "about.html", :class => "orange"} About us
+                  %ul.list-inline.nav-area.no-pb
                     %li
-                      %a{:href => "services.html"} Services
+                      %a{:href => "#home", :style => "orange"} Home
                     %li
-                      %a{:href => "contact.html"} Contact
-                      / .nav.navbar-nav end
-                      / #search start
-                      / #search end
-                    / MAIN NAVIGATION END
-                  / .navbar.navbar-default end
-                / .col-md-12 end
-              / .row end
-            / .main-nav end
-          / .container end
-        / .header-inner end
-      / .header
-    / .header-wrapper.header-transparent end
+                      %a{:href => "#about", :style => "orange"} About us
+                    %li
+                      %a{:href => "#about"} Services
+                    %li
+                      %a{:href => "#contact"} Contact
     .tp-banner-container.fullwidthbanner
       #rev-slider.tp-banner
         %ul
@@ -98,10 +89,6 @@
               years of experience
             .tp-caption.tp-small-heading.sfb{"data-easing" => "Back.easeOut", "data-endspeed" => "500", "data-speed" => "500", "data-start" => "1100", "data-x" => "360", "data-y" => "370", :style => "z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"}
               Serving state wide very proudly for over 35 years
-          / SLIDE ONE END
-      / .tp-banner end
-    / .tp-banner-container end
-    / .page-content start
     .page-content
       .container
         / .row start
@@ -131,10 +118,6 @@
                 .custom-heading.pull-right.text-left{:style => "width: 75%"}
                   %h4 Experience
                   %p We have over 35 years of experience getting the job done!
-                / .custom-heading end
-              / .feature-body end
-            / .feature-box-end
-          / .col-md-4 end
     .page-content.quote.style-1.custom-background.bkg-darkgrey.dark.mb-70
     .page-content
       .container
@@ -151,59 +134,156 @@
                 %p
                   We are builder construction company from Uk with over 20 years
                   of experience in house remodeling, green building and renovations.
-              / .feature-body end
-            / .feature-box-end
-          / .col-md-4 end
+                .custom-heading.style-1
+                  %h4 Free Estimates
+                .custom-heading.style-1
+                  %h4 All work guaranteed
+                .custom-heading.style-1
+                  %h4 Locally owned and operated
+                .custom-heading.style-1
+                  %h4 City and Townships services
+                %a{:name => "about"}
           .col-md-4.col-sm-4
             .feature-box.style-2
               .feature-media
                 %img.img-responsive{:alt => "Builder Construction HTML Template", :src => "img/pics/img-02.jpg"}/
               .feature-body
                 .custom-heading.style-1
-                  %h4 Our services
+                  %h4 Residential Services
                 / .custom-heading end
                 %p
-                  Professional construction services from house renovations and remodeling,
-                  green building and small scope work, like painting.
-              / .feature-body end
-            / .feature-box-end
-          / .col-md-4 end
+                  Our commitment is to provide quality service and make long-term satisfied clients. Our professional residential services include but are not limited to:
+                %ul
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Driveway Paving
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Roadway Patching
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Remodeling
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Crack Repair/Sealing
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Excavation/Gravel Work
           .col-md-4.col-sm-4
             .feature-box.style-2
               .feature-media
                 %img.img-responsive{:alt => "Builder Construction HTML Template", :src => "img/pics/img-03.jpg"}/
               .feature-body
                 .custom-heading.style-1
-                  %h4 Project management
+                  %h4 Commercial Services
                 / .custom-heading end
                 %p
                   Our highly educated staff will make sure that your project will be finished
                   on time and specified budget.
-              / .feature-body end
-            / .feature-box-end
-          / .col-md-4 end
-        / .row end
-      / .container end
-    / .page-content end
-    / .page-content start
-    .page-content.custom-background.bkg-black.dark.mb-70
+                %ul
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Retail Parking Areas
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Roadway Paving
+
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Entrances / Exits
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Parking Lots of all sizes
+
+                      %h4
+                        Drive Throughs
+
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Crack Repair/Sealing
+
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Striping
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Patching/Milling/Site Management
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Excavation/Gravel Work
+
+                  %li
+                    .custom-heading.style-1
+                      %h4
+                        Driveway Paving
+    .page-content
       .container-fluid
         / .row start
         .row.mb-0
           / .col-md-12 start
-          .col-md-12.padding-0.mb-0
-            / Gallery carousel start
+          .col-md-12.padding-0
             .carousel-wrapper
+              .col-md-12
+                %h2.orange Our work
+                %p
+                  These are just a few of our satisfied customers
               .carousel-container
                 #gallery-carousel.owl-carousel.owl-theme
                   .item
                     .gallery-carousel-item
                       %figure
-                        %img.img-responsive{:alt => "Builder Construction HTML Template", :src => "img/pics/img-04.jpg"}/
+                        %img.img-responsive{:alt => "", :src => "img/pics/img-04.jpg"}/
                         .hover-mask-container
                           .hover-zoom
-                            Family House Remodeling Project
+                            Commercial Project
+                  .item
+                    .gallery-carousel-item
+                      %figure
+                        %img.img-responsive{:alt => "", :src => "img/pics/img-05.jpg"}/
+                        .hover-mask-container
+                          .hover-zoom
+                            Commercial Project
+                  .item
+                    .gallery-carousel-item
+                      %figure
+                        %img.img-responsive{:alt => "", :src => "img/pics/img-06.jpg"}/
+                        .hover-mask-container
+                          .hover-zoom
+                            Residential Project
+                  .item
+                    .gallery-carousel-item
+                      %figure
+                        %img.img-responsive{:alt => "", :src => "img/pics/img-07.jpg"}/
+                        .hover-mask-container
+                          .hover-zoom
+                            Residential Project
+                  .item
+                    .gallery-carousel-item
+                      %figure
+                        %img.img-responsive{:alt => "", :src => "img/pics/img-08.jpg"}/
+                        .hover-mask-container
+                          .hover-zoom
+                            Residential Project
+    .row.bg-grey.no-mb
+      .container-fluid
+        .col-md-12.text-center.videos
+          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/z-tLWGcSRcU", :width => "560"}
+          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/zliB5upkNt8", :width => "560"}
     #footer-wrapper
+      %a{:name => "contact"}
       / #footer start
       %footer#footer
         / .container start
@@ -211,16 +291,24 @@
           / .row start
           .row
             / .col-md-3 start
-            .col-md-6.col-sm-12
+            .col-md-12.col-sm-12.text-center
               %h1.orange
                 Joles Asphalt Paving
-            / .col-md-3 end
-            / .col-md-3 start
-            .col-md-3.col-sm-4
-            .col-md-3.col-sm-4
               .footer-info
-                %strong Phone:
-                888-779-0246
+                %ul
+                  %li
+                    %strong Phone:
+                    %span.orange
+                      %a{:href => "tel:888-779-0246"}888-779-0246
+                  %li
+                    Free Estimates
+                  %li
+                    Work Guaranteed
+                  %li.orange
+                    Serving Statewide proudly for 35 years
+                  %li.text-center
+                    %br
+                    %img{ :src => "img/bbb.png"}
             / .col-md-3 end
           / .row end
         / .container end
@@ -235,27 +323,8 @@
           / .col-md-6 start
           .col-md-6.col-sm-6
             %p
-              %strong © Builder
+              %strong © Joles Asphalt Paving
               2016. All rights reserved
-          / .col-md-6 end
-          / .col-md-6 start
-          .col-md-6.col-sm-6
-            %ul.breadcrumb
-              %li
-                %a{:href => "index.html"} Home
-              %li
-                %a{:href => "about.html"} About
-              %li
-                %a{:href => "services.html"} Services
-              %li
-                %a{:href => "projects.html"} Projects
-              %li
-                %a{:href => "news.html"} News
-              %li
-                %a{:href => "contact.html"} Contact
-          / .col-md-6 end
-        / .row end
-      / .container end
       %a.scroll-up{:href => "#"}
         %span.icon-container
           %img.img-responsive{:alt => "arrow icon", :src => "img/svg/arrowup.svg"}/
