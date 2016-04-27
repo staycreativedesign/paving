@@ -36,7 +36,7 @@
         margin-top: 0 !important;
     }
     .logo {
-        float: left;
+      text-align: center;
     }
     .navbar-nav>li>a {
         line-height: 28px;
@@ -214,10 +214,18 @@
         margin-left: 0;
     }
 
+  .nav-area {
+    padding: 0 10px 10px 10px;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
 
+  .nav-area {
+    padding: 0 10px 10px 10px;
+    text-align: center;
+  }
     .page-content .row{
         margin-bottom: 0px;
     }
@@ -238,7 +246,6 @@
         margin-top: 0 !important;
     }
     .logo {
-        float: left;
     }
     .navbar-nav>li>a {
         line-height: 28px;
@@ -385,10 +392,22 @@
       text-align: center;
     }
 
+    .logo {
+      text-align: center;
+    }
+
+  .nav-area {
+    padding: 0 10px 10px 10px;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
 
+  .nav-area {
+    padding: 30px;
+    text-align: center;
+  }
     .page-content .row{
         margin-bottom: 0px;
     }
@@ -516,6 +535,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .nav-area {
+      padding: 0 10px 10px 10px;
+      text-align: center;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -537,6 +561,10 @@
     /*  HEADER WRAPPER
     --------------------------------------------------------------------- */
 
+    .nav-area {
+      padding: 10px;
+      text-align: center;
+    }
     #header-wrapper{
         position: relative;
     }
@@ -548,7 +576,7 @@
         padding-right: 12px;
     }
     .main-nav {
-        margin-top: 10px !important;
+    /*    margin-top: 10px !important; */
     }
 
     .negative-top-margin *[class*="col-"] {
@@ -576,5 +604,28 @@
     .quote.style-3 .icon-container {
         margin-bottom: 15px;
     }
+
+    .nav-area {
+      padding: 30px;
+      text-align: right;
+    }
+
+    .videos {
+      padding-top: 20px;
+    }
+}
+@media only screen and (min-width: 1200px){
+  .nav-area {
+    padding: 30px;
+    text-align: right;
+  }
+
+  .videos {
+    padding-top: 20px;
+  }
+}
+
+.main-nav {
+  margin-top: 10px!important;
 
 }
