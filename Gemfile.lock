@@ -1,6 +1,8 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    haml (4.0.7)
+      tilt
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     mime-types (3.1)
@@ -21,6 +23,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
+  haml
   pony
   sinatra
 

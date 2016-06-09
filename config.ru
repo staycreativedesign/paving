@@ -1,4 +1,4 @@
 require './main'
-require 'haml'
 require 'bundler/setup'
+require 'tilt/haml'
 run Sinatra::Application
