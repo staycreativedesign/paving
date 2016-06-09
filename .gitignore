@@ -1,2 +1,4 @@
 Capfile
 config/**
+main.rb
+/main.rb
